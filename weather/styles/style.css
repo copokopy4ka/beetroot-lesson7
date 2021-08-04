@@ -1,12 +1,137 @@
 html {
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    color: #fff;
 }
 
 body {
+    margin: 0;
+    background-color: #2b81ac;
+    padding: 20px;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 * {
     box-sizing: border-box;
+}
+
+main {
+    background-color: #3399cc;
+    height: 100%;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.weather-title {
+    padding: 40px 0;
+}
+
+.weather-title h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.weather-list {
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    font-size: 0;
+    transition: all .1s linear;
+}
+
+.weather-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.weather-item {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+    min-height: 100px;
+    padding: 15px 0;
+    border: 2px solid #fff;
+    transition: all .1s linear;
+}
+
+.weather-content {
+    opacity: .8;
+}
+
+.small {
+    min-width: 25%;
+}
+
+.middle {
+    min-width: 50%;
+}
+
+.big {
+    min-width: 100%;
+}
+
+.weather-item:first-child {
+    background-color: #3399cc;
+}
+
+.weather-item:nth-child(2) {
+    background-color: #33cccc;
+}
+
+.weather-item:nth-child(3) {
+    background-color: #996699;
+}
+
+.weather-item:nth-child(4) {
+    background-color: #c24747;
+}
+
+.weather-item:nth-child(5) {
+    background-color: #e2674a;
+}
+
+.weather-item:nth-child(6) {
+    background-color: #ffcc66;
+}
+
+.weather-item:nth-last-child(5) {
+    background-color: #8bd08b;
+}
+
+.weather-item:nth-last-child(4) {
+    background-color: #669999;
+}
+
+.weather-item:nth-last-child(3) {
+    background-color: #cc6699;
+}
+
+.weather-item:nth-last-child(2) {
+    background-color: #339966;
+}
+
+.weather-item:last-child {
+    background-color: #666699;
+}
+
+.weather-list:hover .weather-item{
+    opacity: .6;
+}
+
+.weather-list > .weather-item:hover {
+    opacity: 1;
 }
