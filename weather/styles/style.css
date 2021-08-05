@@ -69,7 +69,7 @@ main {
 }
 
 .weather-content {
-    opacity: .8;
+    opacity: .6;
 }
 
 .small {
@@ -132,6 +132,6 @@ main {
     opacity: .6;
 }
 
-.weather-list > .weather-item:hover {
+.weather-list .weather-item:hover {
     opacity: 1;
 }
